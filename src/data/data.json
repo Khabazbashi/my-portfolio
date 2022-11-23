@@ -1,0 +1,193 @@
+{
+    "home": {
+      "title": "Hi, I'm Sara!",
+      "info": "A full stack .NET developer based in Stockholm, who is passionate about coding, horror movies and outdoor adventures!"
+    },
+    "about": {
+      "title": "About me",
+      "info": "I am a developer who transitioned from a long background in dentistry and pedodontics. My interest in computers and technology goes back as far as I can remember and hasn't subsided since.\n \nRecently, I had the chance to turn my lifelong passion into a career when I was selected to attend </salt> bootcamp. \n\nI love the problem-solving aspect of coding and have a desire to constantly learn new skills and improve.",
+      "subtitle": "Skills",
+      "stack": {
+        "icons": [
+          {
+            "image": "https://i.imgur.com/FV9bGuI.png",
+            "alt":    "C#"
+          },
+          {
+            "image": "https://i.imgur.com/AkF7wwX.png",
+            "alt":    ".NET Core"
+          },
+          {
+            "image": "https://i.imgur.com/XlBhL8r.png",
+            "alt":    "JavaScript "
+          },
+          {
+            "image": "https://i.imgur.com/oPr12pv.png",
+            "alt":    "HTML"
+          },
+          {
+            "image": "https://i.imgur.com/krVgT6g.png",
+            "alt":    "CSS "
+          },
+          {
+            "image": "https://i.imgur.com/tyxw1w4.png",
+            "alt":    "React "
+          },
+          {
+            "image": "https://i.imgur.com/R0Klr0O.png",
+            "alt":    "Vue"
+          },
+   
+          {
+            "image": "https://i.imgur.com/f7Pvt9O.png",
+            "alt":    "TailwindCSS "
+          },
+          {
+            "image": "https://i.imgur.com/CnYcu2X.png",
+            "alt":    "SQL Server"
+          },
+          {
+            "image": "https://i.imgur.com/4R5h5mh.png",
+            "alt":    "Entity Framework"
+          },
+          {
+            "image": "https://i.imgur.com/3ewyYsv.png",
+            "alt":    "NodeJS"
+          },
+          {
+            "image": "https://i.imgur.com/PSVDtf3.png",
+            "alt":    "R"
+          },
+          {
+            "image": "https://i.imgur.com/LjcMIjZ.jpg",
+            "alt":    "REST"
+          },
+          {
+            "image": "https://i.imgur.com/DOuRecZ.png",
+            "alt":    "Azure"
+          },
+          {
+            "image": "https://imgur.com/PAshpFC.png",
+            "alt":    "Azure Data Studio"
+          },
+          {
+            "image": "https://i.imgur.com/DGspkuq.png",
+            "alt":    "Vercel"
+          },
+          {
+            "image": "https://i.imgur.com/LZpYB17.png",
+            "alt":    "Heroku"
+          },
+          {
+            "image": "https://i.imgur.com/G4nMova.png",
+            "alt":    "VS Code"
+          },
+          {
+            "image": "https://i.imgur.com/YS06ztj.png",
+            "alt":    "Visual Studio"
+          },
+          {
+            "image": "https://i.imgur.com/XTPbmX7.png",
+            "alt":    "Rider"
+          },
+          {
+            "image": "https://i.imgur.com/RpZfluP.png",
+            "alt":    "GitHub"
+          },
+          {
+            "image": "https://i.imgur.com/88KOoHw.png",
+            "alt":    "Jest"
+          },
+          {
+            "image": "https://i.imgur.com/C6bA2gH.png",
+            "alt":    "xUnit"
+          },
+          {
+            "image": "https://i.imgur.com/VWyn82M.png",
+            "alt":    "Docker"
+          },
+    
+          {
+            "image": "https://i.imgur.com/S2d8YGC.png",
+            "alt":    "Latex"
+          },
+  
+          {
+            "image": "https://i.imgur.com/2qI5iej.png",
+            "alt":    "Trello"
+          },
+          {
+            "image": "https://i.imgur.com/cdQVaxK.png",
+            "alt":    "Figma"
+          }
+        ],
+        "noicons":[
+          "C#",
+          ".NET Core",
+          "Figma",
+          "Trello",
+          "Latex",
+          "Docker",
+          "xUnit",
+          "Jest",
+          "GitHub",
+          "Rider",
+          "Visual Studio",
+          "VS Code",
+          "Heroku",
+          "Vercel",
+          "Azure Data Studio",
+          "Azure",
+          "REST",
+          "R",
+          "NodeJS",
+          "Entity Framework",
+          "SQL Server",
+          "TailwindCSS",
+          "Vue",
+          "React",
+          "CSS",
+          "HTML",
+          "JavaScript",
+          "Razor Pages", 
+          "MVC", 
+          "Web API", 
+          "Test-driven development", 
+          "Mob Programming", 
+          "Agile work methods"
+        ] 
+      } 
+    },
+    "projects":{
+      "title": "My projects",
+      "items": [
+        {
+          "subtitle": "Simple Calculator",
+          "link": "https://github.com/Khabazbashi/SimpleCalculator",
+          "path": "calculator.png",
+          "alt": "Calculator app",
+          "description": "A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native. A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native."
+        },
+        {
+          "subtitle": "Wedding Invitation",
+          "link": "https://wedding-invitation-iota.vercel.app/",
+          "path": "wedding.png",
+          "alt": "Wedding app",
+          "description": "This project was created for my wedding as a replacement for invitation cards, it was an opportunity for me to learn a bit more about React and how to deploy. The project is entirely based on React, deployed using Vercel. Key learning moments was general training in React, routing, deployment and connecting to Google Maps services. The site is primarily designed for mobile use."
+        },
+        {
+          "subtitle": "Linqin",
+          "link": "https://calm-smoke-042ccb503.1.azurestaticapps.net/",
+          "path": "linqin.png",
+          "alt": "Linqin app",
+          "description": "This is a project me and my mob made to graduate Salt. LINQ facilitates coding and increases readability and maintainability of your code. It can however be daunting and challenging for one who lacks previous experience in coding. Our ambition was to create an app that helps future coders and students at SALT by providing a visual and challenge based coding experience of LINQ."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact me",
+      "email": "mailto:sara.khabazbashi@appliedtechnology.se",
+      "linkedin": "https://www.linkedin.com/in/sara-k-768537219/",
+      "github": "https://github.com/Khabazbashi"
+    }
+  }

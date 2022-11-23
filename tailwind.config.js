@@ -2,7 +2,19 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        saraimg: "url('/public/saraimg.jpeg')",
+        linqin: "url('/public/linqin.png')",
+        wedding: "url('/public/wedding.png')",
+        calculator: "url('/public/calculator.png')",
+      },
+      screens: {
+        "3xl": "1835px",
+        "4xl": "2419px",
+        "5xl": "2800px",
+      },
+    },
   },
   plugins: [],
 };
