@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchColorPalette } from "../colorGenerator";
+import { sanityRepo } from "../sanity/sanity-repo";
+import { Iproject } from "../interfaces/project";
 import Card from "../components/Card";
 import addadata from "../data/data.json";
 import "../App.css";
@@ -7,18 +9,24 @@ import "../App.css";
 const Projects = () => {
   const [colorPalette, setColorPalette] = useState<Array<string>>();
   const [hasLoaded, setLoaded] = useState<Boolean>(false);
+  const [projects, setProjects] = useState<Iproject[]>();
 
   useEffect(() => {
     const getColorPalette = async () => {
       await fetchColorPalette().then((result) => setColorPalette(result));
     };
 
+    const getProjects = async () => {
+      await sanityRepo.getAllProjects().then((result) => setProjects(result));
+    };
+
     if (!hasLoaded) {
+      getProjects();
       getColorPalette();
       setLoaded(true);
     }
   }, [hasLoaded]);
-
+  console.log(projects);
   if (hasLoaded) {
     return (
       <div
@@ -33,7 +41,8 @@ const Projects = () => {
             2xl:mt-20 2xl:grid-cols-3 2xl:w-10/12 3xl:w-3/4 4xl:w-2/3 5xl:w-1/2"
         >
           {colorPalette &&
-            addadata.projects.items.map((project, index) => (
+            projects &&
+            projects.map((project, index) => (
               <Card
                 key={index}
                 project={project}

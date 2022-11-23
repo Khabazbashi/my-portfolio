@@ -1,3 +1,3 @@
-export interface color {
+export interface Icolor {
   color: string;
 }
