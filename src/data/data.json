@@ -158,32 +158,6 @@
         ] 
       } 
     },
-    "projects":{
-      "title": "My projects",
-      "items": [
-        {
-          "subtitle": "Simple Calculator",
-          "link": "https://github.com/Khabazbashi/SimpleCalculator",
-          "path": "calculator.png",
-          "alt": "Calculator app",
-          "description": "A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native. A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native."
-        },
-        {
-          "subtitle": "Wedding Invitation",
-          "link": "https://wedding-invitation-iota.vercel.app/",
-          "path": "wedding.png",
-          "alt": "Wedding app",
-          "description": "This project was created for my wedding as a replacement for invitation cards, it was an opportunity for me to learn a bit more about React and how to deploy. The project is entirely based on React, deployed using Vercel. Key learning moments was general training in React, routing, deployment and connecting to Google Maps services. The site is primarily designed for mobile use."
-        },
-        {
-          "subtitle": "Linqin",
-          "link": "https://calm-smoke-042ccb503.1.azurestaticapps.net/",
-          "path": "linqin.png",
-          "alt": "Linqin app",
-          "description": "This is a project me and my mob made to graduate Salt. LINQ facilitates coding and increases readability and maintainability of your code. It can however be daunting and challenging for one who lacks previous experience in coding. Our ambition was to create an app that helps future coders and students at SALT by providing a visual and challenge based coding experience of LINQ."
-        }
-      ]
-    },
     "contact": {
       "title": "Contact me",
       "email": "mailto:sara.khabazbashi@appliedtechnology.se",

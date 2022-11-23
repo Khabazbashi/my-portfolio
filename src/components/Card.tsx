@@ -2,11 +2,8 @@ import { Iproject } from "../interfaces/project";
 import { Icolor } from "../interfaces/colors";
 
 const Card = (props: { project: Iproject; color: Icolor }) => {
-  const { title, url, image, altText, description } = props.project;
+  const { title, url, imageUrl, altText, description } = props.project;
   const { color } = props.color;
-  const {
-    asset: { _ref },
-  } = image;
 
   return (
     <div
@@ -22,11 +19,9 @@ const Card = (props: { project: Iproject; color: Icolor }) => {
       <div
         className="flex my-5 bg-cover bg-center bg-no-repeat justify-center rounded-xl h-52 
           md:h-50 lg:h-72 "
-        aria-label={altText}
+        title={altText}
         style={{
-          backgroundImage: `url(https://cdn.sanity.io/images/${
-            process.env.REACT_APP_PROJECT_ID
-          }/production/${_ref.slice(6).replace(/-([^-]*)$/, "." + "$1")})`,
+          backgroundImage: `url(${imageUrl})`,
         }}
       ></div>
       <div className="flex h-[50%] grow">

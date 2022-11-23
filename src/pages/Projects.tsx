@@ -34,7 +34,7 @@ const Projects = () => {
         3xl:min-h-[97%]"
       >
         <h1 className="text-4xl font-bold text-[#0f1e2d] mt-20 mb-10 md:mt-32 xl:text-5xl">
-          {addadata.projects.title}
+          My Projects
         </h1>
         <div
           className="grid place-items-center grid-cols-1 my-4 gap-4 md:grid-cols-2 md:mb-24 md:mt-10 md:gap-7 lg:w-11/12 lg:grid-cols-2 lg:gap-10
