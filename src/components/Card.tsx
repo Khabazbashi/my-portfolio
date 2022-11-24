@@ -1,7 +1,7 @@
-import { Iproject } from "../interfaces/project";
-import { Icolor } from "../interfaces/colors";
+import { IProject } from "../interfaces/interfaces";
+import { IColor } from "../interfaces/interfaces";
 
-const Card = (props: { project: Iproject; color: Icolor }) => {
+const Card = (props: { project: IProject; color: IColor }) => {
   const { title, url, imageUrl, altText, description } = props.project;
   const { color } = props.color;
 

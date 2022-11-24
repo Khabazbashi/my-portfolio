@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import { fetchColorPalette } from "../colorGenerator";
 import { sanityRepo } from "../sanity/sanity-repo";
-import { Iproject } from "../interfaces/project";
+import { IProject } from "../interfaces/interfaces";
 import Card from "../components/Card";
-import addadata from "../data/data.json";
 import "../App.css";
 
 const Projects = () => {
   const [colorPalette, setColorPalette] = useState<Array<string>>();
   const [hasLoaded, setLoaded] = useState<Boolean>(false);
-  const [projects, setProjects] = useState<Iproject[]>();
+  const [projects, setProjects] = useState<IProject[]>();
 
   useEffect(() => {
     const getColorPalette = async () => {
@@ -26,7 +25,6 @@ const Projects = () => {
       setLoaded(true);
     }
   }, [hasLoaded]);
-  console.log(projects);
   if (hasLoaded) {
     return (
       <div
