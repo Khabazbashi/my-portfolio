@@ -5,7 +5,6 @@ import addadata from "../data/data.json";
 //TODO Better images
 //TODO Increase Card size on hover and perhaps blur the other ones
 //TODO if no color returned default palette should be returned
-//TODO Sanity
 
 const Home = () => {
   return (
@@ -13,7 +12,7 @@ const Home = () => {
       <div className="flex h-[50%] bg-saraimg bg-center bg-cover lg:h-[100%] lg:w-1/2">
         <p> </p>
       </div>
-      <div className="flex flex-col py-4 px-4 h-[50%] md:px-20 md:py-24 md:px-10 md:h-[60%] lg:h-[100%] lg:w-1/2 lg:justify-center 2xl:px-16 3xl:px-22">
+      <div className="flex flex-col py-4 px-4 h-[50%] md:px-40 md:py-32 md:h-[50%] lg:px-10 lg:h-[100%] lg:w-1/2 lg:justify-center 2xl:px-16 3xl:px-22">
         <h1 className="text-[#0f1e2d] text-4xl py-5 lg:pt-0 font-bold 3xl:text-5xl 3xl:py-8">
           {addadata.home.title}
         </h1>

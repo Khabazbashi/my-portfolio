@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col h-[93%] text-center align-center justify-center px-4">
       <h1 className="text-center text-4xl font-bold pb-5 text-[#0f1e2d] xl:text-5xl">
-        {addadata.contact.title}
+        Contact me
       </h1>
       <div className="flex flex-row justify-center">
         <a
