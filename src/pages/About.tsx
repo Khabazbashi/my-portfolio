@@ -28,29 +28,27 @@ const About = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center text-center px-4 md:px-28 xl:px-64 3xl:px-80">
-      <div className="my-20 md:mt-32 3xl:mb-36">
-        <h1 className="text-4xl mb-8 font-bold text-[#0f1e2d] xl:text-5xl">
+    <div className="flex flex-col items-center text-center px-4 md:px-28 2xl:w-4/5 3xl:w-2/3 4xl:w-[52%] 5xl:w-[48%] m-auto">
+      <div className="my-20 md:mt-32 3xl:mb-32 4xl:mb-28">
+        <h1 className="text-4xl mb-8 font-bold 2xl:text-4xl 4xl:text-5xl">
           About me
         </h1>
-        <p className="text-lg lg:text-xl xl:text-2xl 3xl:text-[25px]">
-          {addadata.about.info}
-        </p>
+        <p className="text-lg lg:text-xl">{addadata.about.info}</p>
       </div>
       <div>
-        <h2 className="text-3xl text-[#0f1e2d] font-bold leading-tight leading-7 text-center break-words mb-[5%] xl:text-4xl">
-          Skills
+        <h2 className="text-3xl font-bold text-center break-words mb-[5%] 4xl:text-4xl">
+          Technical Skills
         </h2>
         <div
-          className="grid grid-cols-3 my-12 self-center gap-3 md:grid-cols-4 md:gap-10 lg:grid-cols-7 
-          lg:gap-7 xl:grid-cols-9 xl:gap-10"
+          className="grid grid-cols-3 my-12 self-center gap-3 md:grid-cols-4 md:gap-10 lg:grid-cols-6 
+          lg:gap-7 xl:grid-cols-7 2xl:gap-10"
         >
           {colorPalette &&
             skills &&
-            skills.map((x, i) => (
+            skills.map((item, index) => (
               <Skill
-                key={i}
-                skill={x}
+                key={index}
+                skill={item}
                 color={{
                   color:
                     colorPalette[

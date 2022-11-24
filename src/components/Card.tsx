@@ -18,14 +18,16 @@ const Card = (props: { project: IProject; color: IColor }) => {
       </div>
       <div
         className="flex my-5 bg-cover bg-center bg-no-repeat justify-center rounded-xl h-52 
-          md:h-50 lg:h-72 "
+          md:h-50 lg:h-52 xl:h-40"
         title={altText}
         style={{
           backgroundImage: `url(${imageUrl})`,
         }}
       ></div>
       <div className="flex h-[50%] grow">
-        <p className="text-lg text-justify xl:text-xl">{description}</p>
+        <p className="text-[20px] text-justify xl:text-[17px] 2xl:text-[18px]">
+          {description}
+        </p>
       </div>
     </div>
   );

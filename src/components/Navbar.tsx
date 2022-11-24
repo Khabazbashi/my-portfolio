@@ -5,10 +5,10 @@ const Navbar = () => {
   const [isActive, setActive] = useState(false);
   return (
     <div className="flex flex-row justify-end z-40 bg-[#0f1e2d] drop-shadow-xl sticky top-0 h-16 lg:h-18 3xl:h-20">
-      <p className="grow text-white self-center	text-md pl-4 lg:text-lg xl:text-2xl xl:pl-6">
+      <p className="grow text-white self-center	text-md pl-4 lg:text-lg xl:text-xl xl:pl-6">
         SARA KHABAZBASHI
       </p>
-      <div className="hidden xl:flex text-white items-center space-x-5 mx-6 text-xl">
+      <div className="hidden text-white items-center space-x-5 mx-6 text-lg xl:flex 3xl:text-xl">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
