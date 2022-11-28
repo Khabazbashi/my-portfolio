@@ -1,15 +1,11 @@
 import { IProject } from "../interfaces/interfaces";
 import { IColor } from "../interfaces/interfaces";
+import "../App.css";
 
-const Card = (props: { project: IProject; color: IColor }) => {
+const Card = (props: { project: IProject }) => {
   const { title, url, imageUrl, altText, description } = props.project;
-  const { color } = props.color;
-
   return (
-    <div
-      style={{ backgroundColor: `${color}` }}
-      className="flex flex-col rounded-3xl p-4 drop-shadow-lg md:h-full md:p-6 transition-transform	ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover:duration-300"
-    >
+    <div className="card flex flex-col rounded-xl drop-shadow-lg bg-[#F3F3F3] p-6 md:h-full">
       <div className="flex flex-row justify-between	items-center">
         <h2 className="text-xl font-bold">{title}</h2>
         <a href={url} target="_blank" rel="noopener noreferrer">
@@ -25,9 +21,7 @@ const Card = (props: { project: IProject; color: IColor }) => {
         }}
       ></div>
       <div className="flex h-[50%] grow">
-        <p className="text-[20px] text-justify xl:text-[17px] 2xl:text-[18px]">
-          {description}
-        </p>
+        <p className="text-left break-normal xl:text-md">{description}</p>
       </div>
     </div>
   );
