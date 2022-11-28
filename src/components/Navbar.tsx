@@ -4,7 +4,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
   return (
-    <div className="flex flex-row justify-end z-40 bg-[#0f1e2d] drop-shadow-xl sticky top-0 h-16 lg:h-18 3xl:h-20">
+    <div className="flex flex-row fixed justify-end w-full z-40 bg-[#0f1e2d] drop-shadow-xl top-0 h-16 lg:h-18 3xl:h-16">
       <p className="grow text-white self-center	text-md pl-4 lg:text-lg xl:text-xl xl:pl-6">
         SARA KHABAZBASHI
       </p>
@@ -35,7 +35,7 @@ const Navbar = () => {
       {isActive && (
         <div
           onClick={() => setActive(false)}
-          className="absolute text-white text-md flex flex-col w-full text-end bg-black space-y-5 opacity-80 pt-20 pb-4 
+          className="absolute text-white text-md flex flex-col w-full text-end bg-black space-y-5 opacity-80 pt-24 pb-10 
           items-end md:pt-24 md:space-y-10 md:w-1/2 md:h-screen md:text-xl lg:space-y-6 xl:hidden"
         >
           <Link
