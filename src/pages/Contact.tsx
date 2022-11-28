@@ -1,9 +1,13 @@
+import { IColorProps } from "../interfaces/interfaces";
 import addadata from "../data/data.json";
 
-const Contact = () => {
+const Contact = ({ palette }: IColorProps) => {
   return (
     <div className="flex flex-col h-full text-center align-center justify-center px-4">
-      <h1 className="text-center text-4xl font-bold pb-5 text-[#0f1e2d]">
+      <h1
+        style={{ color: `${palette[1]}` }}
+        className="text-center text-4xl font-bold pb-5 text-[#0f1e2d]"
+      >
         Contact me
       </h1>
       <div className="flex flex-row justify-center">

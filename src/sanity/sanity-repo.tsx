@@ -16,14 +16,10 @@ const getAllSkills = async () => {
   );
   let PROJECT_URL = `https://${process.env.REACT_APP_PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${process.env.REACT_APP_DATASET}?query=${QUERY}`;
 
-  const test = await fetch(PROJECT_URL)
+  return await fetch(PROJECT_URL)
     .then((res) => res.json())
     .then(({ result }) => result)
     .catch((err) => console.error(err));
-
-  console.log(test);
-
-  return test;
 };
 
 export const sanityRepo = { getAllProjects, getAllSkills };

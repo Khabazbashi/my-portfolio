@@ -7,10 +7,12 @@ const colorPicker = (palette: Array<string>) => {
     let g = parseInt(`${color[3]}${color[4]}`, 16);
     let b = parseInt(`${color[5]}${color[6]}`, 16);
     let hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
-    if (hsp > 100 && hsp < 240) {
+
+    if (hsp < 120) {
       finalPalette.push(color);
     }
   }
+
   return finalPalette;
 };
 
@@ -20,7 +22,7 @@ const requestOptions = {
   body: JSON.stringify({
     mode: "transformer",
     num_colors: 4,
-    temperature: "1.3",
+    temperature: "2.3",
     num_results: 4,
     adjacency: [
       "0",
@@ -44,7 +46,7 @@ const requestOptions = {
   }),
 };
 
-export async function fetchColorPalette(): Promise<Array<string> | undefined> {
+export async function fetchColorPalette(): Promise<String[]> {
   return await fetch("https://api.huemint.com/color", requestOptions)
     .then((response) => response.json())
     .then((data) => {
@@ -55,5 +57,3 @@ export async function fetchColorPalette(): Promise<Array<string> | undefined> {
       return colorPicker(colors);
     });
 }
-
-export async function fetchOneColor() {}

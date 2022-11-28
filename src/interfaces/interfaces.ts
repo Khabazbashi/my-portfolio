@@ -13,6 +13,6 @@ export interface ISkill {
   altText: string;
 }
 
-export interface IColor {
-  color: string;
+export interface IColorProps {
+  palette: Array<String>;
 }

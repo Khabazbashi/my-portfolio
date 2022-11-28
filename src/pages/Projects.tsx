@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import SkeletonCard from "../components/SkeletonCard";
-import LoadingButton from "../components/LoadingButton";
 import { sanityRepo } from "../sanity/sanity-repo";
 import { IProject } from "../interfaces/interfaces";
+import { IColorProps } from "../interfaces/interfaces";
+import SkeletonCard from "../components/SkeletonCard";
+import LoadingButton from "../components/LoadingButton";
 import Card from "../components/Card";
 
-const Projects = () => {
+const Projects = ({ palette }: IColorProps) => {
   const [hasLoaded, setLoaded] = useState<Boolean>(false);
   const [projects, setProjects] = useState<IProject[]>();
 
@@ -24,7 +25,10 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col m-auto items-center text-center px-6 md:px-10">
-      <h1 className="text-4xl font-bold text-[#0f1e2d] mt-32 mb-8 2xl:mt-40">
+      <h1
+        style={{ color: `${palette[1]}` }}
+        className="text-4xl font-bold text-[#0f1e2d] mt-32 mb-8 2xl:mt-40"
+      >
         Projects
       </h1>
       {hasLoaded ? (
@@ -34,7 +38,7 @@ const Projects = () => {
         >
           {projects &&
             projects.map((project, index) => (
-              <Card key={index} project={project} />
+              <Card key={index} project={project} palette={palette[2]} />
             ))}
         </div>
       ) : (
