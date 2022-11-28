@@ -2,8 +2,8 @@ import addadata from "../data/data.json";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col h-[93%] text-center align-center justify-center px-4">
-      <h1 className="text-center text-4xl font-bold pb-5 text-[#0f1e2d] 4xl:text-5xl">
+    <div className="flex flex-col h-full text-center align-center justify-center px-4">
+      <h1 className="text-center text-4xl font-bold pb-5 text-[#0f1e2d]">
         Contact me
       </h1>
       <div className="flex flex-row justify-center">
@@ -14,7 +14,7 @@ const Contact = () => {
         >
           <img
             src="./github.png"
-            className="social-icon w-auto h-20 m-5 rounded-full"
+            className="social-icon w-auto h-16 md:h-20 mx-2 md:m-5 rounded-full"
             alt="githubicon"
           />
         </a>
@@ -25,7 +25,7 @@ const Contact = () => {
         >
           <img
             src="./linkedin.png"
-            className="social-icon w-auto h-20 m-5 rounded-full"
+            className="social-icon w-auto h-16 md:h-20 mx-2 md:m-5 rounded-full"
             alt="linkedinicon"
           />
         </a>
@@ -36,7 +36,7 @@ const Contact = () => {
         >
           <img
             src="./email.png"
-            className="social-icon w-auto h-20 m-5 rounded-full"
+            className="social-icon w-auto h-16 md:h-20 mx-2 md:m-5 rounded-full"
             alt="emailicon"
           />
         </a>
