@@ -6,13 +6,13 @@ const Navbar = () => {
   return (
     <div className="flex flex-row fixed justify-end w-full z-40 bg-[#0f1e2d] drop-shadow-xl top-0 h-16 lg:h-18 3xl:h-16">
       <p className="grow text-white self-center	text-md pl-4 lg:text-lg xl:text-xl xl:pl-6">
-        SARA KHABAZBASHI
+        <Link to="/">Sara Khabazbashi</Link>
       </p>
       <div className="hidden text-white items-center space-x-5 mx-6 text-lg xl:flex 3xl:text-xl">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/projects">PROJECTS</Link>
+        <Link to="/contact">CONTACT</Link>
       </div>
       <button
         className="p-4 z-40 xl:hidden"
